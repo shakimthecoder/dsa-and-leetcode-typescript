@@ -11,7 +11,7 @@ function twoSum(nums: number[], target: number): number[]{
             }
         }
     }
-    return [];
+    return []; 
 }
 
 // More efficent solution 

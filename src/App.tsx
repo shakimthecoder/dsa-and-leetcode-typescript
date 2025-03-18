@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Reverse from './algorithms/reverse';
+import Reverse, { reverseStr, reverseString } from './algorithms/reverse';
 
 function App() {
  const string = Reverse("Shakim");
  console.log(string);
+
+ reverseString("Millions");
+ console.log(reverseString("Millions"));
+
+ reverseStr("News");
+ console.log(reverseStr("News"));
 
 }
 export default App
