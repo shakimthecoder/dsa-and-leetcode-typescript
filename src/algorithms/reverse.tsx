@@ -1,8 +1,12 @@
 // Given a string return a new string with the reversed order of characters
 // ex "hello" => "olleh"
 
+export default function reverseInteger(n: number | string ): any {
+    let reversed = n.toString().split("").reverse().join("");
+    return parseInt(reversed) * Math.sign(Number(n));
+}
  // Example 1
- export default function reverse(str: string): string {
+ export function reverse(str: string): string {
     let reverse = "";
     for(let i = 0; i < str.length; i++) {
         reverse = str[i] + reverse;
@@ -23,7 +27,6 @@ export function reverseStr(str: string): string {
 // Example with chaining, split, and join
 
 export function reverseString(str: string): string {
-    const strToArray = str.split(''); // Convert string to array
-    strToArray.reverse(); // Reverse the array
-    return strToArray.join(''); // convert array back to string
+    return str.split("").reverse().join("")
 }
+
