@@ -8,6 +8,7 @@ import Capitalize, { Capital } from
   './algorithms/capitalize';
   import Vowels from './algorithms/vowels';
 import anagram from './algorithms/anagrams';
+import fizzbuzz from './fizzbuzz';
 function App() {
  const string = Reverse("Shakim");
  console.log(string);
@@ -31,4 +32,5 @@ console.log(Capital("I'm only here until tonight"));
 
 console.log(anagram("listen", "sil"));
 console.log(Vowels("Same damn song"));
+console.log(fizzbuzz(15));
 export default App
