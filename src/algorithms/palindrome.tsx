@@ -6,3 +6,4 @@ export default function Palindrome(str: any): boolean {
         return true;
     } else return false;
 }
+

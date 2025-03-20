@@ -20,3 +20,10 @@
 
     return charMap;
     */
+
+    export default function returnString (str: string): string {
+        let name = str;
+        return str;
+    }
+
+    returnString("James");
